@@ -2,6 +2,7 @@ body{
     background-color: black;
     font-family: "Manrope", sans-serif;
     color: white;
+    margin: 0;
 }
 
 h1{
@@ -194,4 +195,40 @@ header{
 
 .projectcard:hover{
     transform: translateY(-10px);
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 1215px) {
+
+    .headtitle, .projectcontainer, .skillscontainer{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .skillscontainer{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .projectcontainer{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .skillscontainer{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .projectcontainer{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .headercenter ul{
+        gap: 5px;
+    }
 }
