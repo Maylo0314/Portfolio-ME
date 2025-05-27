@@ -135,7 +135,8 @@ header{
     align-items: center;
     gap: 20px;
     background-color: white;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
     color: black;
     border-radius: 16px;
@@ -177,6 +178,14 @@ header{
     color: black;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 16px;
+}
+
+.closed{
+    background-color: #373557;
+}
+
+.asj{
+    background-color: #8f7a56;
 }
 
 .projectcard .title{
