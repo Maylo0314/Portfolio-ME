@@ -208,10 +208,10 @@ header{
 .projectcard img {
     width: 100%;
     height: auto;
-    border-radius: 16px 16px 0 0;
     aspect-ratio: 16 / 9; 
     object-fit: fill;   
-    display: block;   
+    display: block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .projectcard .title p{
