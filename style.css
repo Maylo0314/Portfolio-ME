@@ -196,12 +196,21 @@ header{
     background-color: #8f7a56;
 }
 
+.pokedex{
+    background-color: #667aaa;
+}
+
+.me img{
+    object-fit: cover !important;
+    object-position: center 20%;
+}
+
 .projectcard img {
     width: 100%;
     height: auto;
     border-radius: 16px 16px 0 0;
     aspect-ratio: 16 / 9; 
-    object-fit: contain;   
+    object-fit: fill;   
     display: block;   
 }
 
