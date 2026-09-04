@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"/>
     <script src="https://kit.fontawesome.com/929f86c78c.js" crossorigin="anonymous"></script>
     <title>Home</title>
 </head>
@@ -42,6 +43,10 @@
             <h1 class="special">Skills</h1>
         </div>
         <div class="skillscontainer">
+            <div class="skillcard">
+                <p>C#</p>
+                <i class="fa-solid fa-code"></i>
+            </div>
             <div class="skillcard htmlcss">
                 <p>HTML/CSS</p>
                 <i class="fa-regular fa-file-code"></i>
@@ -51,24 +56,36 @@
                 <i class="fa-brands fa-js"></i>
             </div>
             <div class="skillcard">
-                <p>C#</p>
-                <i class="fa-solid fa-code"></i>
+                <p>Shader (HLSL)</p>
+                <i class="fa-solid fa-calculator"></i>
             </div>
             <div class="skillcard">
-                <p>PHP</p>
-                <i class="fa-brands fa-php"></i>
+                <p>Maya</p>
+                <i class="fa-solid fa-cube"></i>
+            </div>
+            <div class="skillcard">
+                <p>Substance 3D Painter</p>
+                <i class="fa-solid fa-paint-roller"></i>
+            </div>
+            <div class="skillcard">
+                <p>ZBrush</p>
+                <i class="fa-solid fa-brush"></i>
+            </div>
+            <div class="skillcard">
+                <p>Photoshop</p>
+                <i class="fa-solid fa-palette"></i>
             </div>
             <div class="skillcard">
                 <p>Unity</p>
                 <i class="fa-brands fa-unity"></i>
             </div>
             <div class="skillcard">
-                <p>Blender</p>
-                <i class="fa-solid fa-cube"></i>
+                <p>PHP</p>
+                <i class="fa-brands fa-php"></i>
             </div>
             <div class="skillcard">
-                <p>Photoshop</p>
-                <i class="fa-solid fa-palette"></i>
+                <p>Git</p>
+                <i class="fa-brands fa-git-alt"></i>
             </div>
             <div class="skillcard">
                 <p>ICT</p>
@@ -112,9 +129,39 @@
                     <img src="images/Escape.png" alt="">
                 </div>
             </a>
-            <div class="projectcard me">
-                <img src="images/maylo-elfrink.tmb-webp.webp" alt="">
+            <a target="_blank" href="#">
+                <div class="projectcard">
+                    <img src="images/3D_Room_Final_4K.png" alt="">
+                </div>
+            </a>
+            <a target="_blank" href="#">
+                <div class="projectcard">
+                    <video controls autoplay muted loop src="Videos/Ind_Project_Shader_Recording1.mp4"></video>
+                </div>
+            </a>
+            <a target="_blank" href="https://github.com/Maylo0314">
+                <div class="projectcard">
+                    <img src="images/github.png" alt="">
+                </div>
+            </a>
+        </div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <img src="images/3D_Room_Assets (1).png" />
+                </div>
+                <div class="swiper-slide">
+                <img src="images/3D_Room_Assets_Outlines_Blue (1).png" />
+                </div>
+                <div class="swiper-slide">
+                <img src="images/3D_Room_Assets_Materials (1).png" />
+                </div>
+                <div class="swiper-slide">
+                <img src="images/3D_Room_Final_4K.png" />
+                </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -128,20 +175,45 @@
             </div>
             <div class="aboutcontent">
                 <div class="title">
-                    <h1 class="special">Maylo</h1>
+                    <h1 class="special"> Hi! I’m Maylo</h1>
                 </div>
-                <h2>"I code with colored letters — it's how I express my creativity."</h2>
                 <p>
-                    Hi! I'm Maylo, a 20-year-old software developer with a strong passion for front-end development and game creation. I love bringing ideas to life through clean code and creative design. Front-end development really sparked my interest in the visual and interactive side of software, and it's where I get to combine my technical skills with creativity.
+                    A Software Developer currently studying <strong>Creative Media &amp; Game Technologies (CMGT) at Saxion University of Applied Sciences in Enschede</strong>.<br><br>
 
-                    Over the years, I’ve gained a wide range of experience—from building websites with HTML/CSS, and JavaScript to creating 3D and 2D games. I also enjoy building PCs and exploring the more hands-on, hardware side of tech.
+                    After graduating as a Software Developer, I decided to continue my education and focus on what I’m most passionate about: <strong>game development</strong>. CMGT allows me to combine my technical background with my creative interests and develop my skills in creating games and interactive experiences.<br><br>
 
-                    Whether I’m coding a game, bringing interfaces to life with front-end code, or exploring new tools, I’m always eager to grow and create.
+                    My main role within game development is <strong>Programming</strong>. I enjoy building gameplay systems, mechanics, tools, and solving technical challenges. My background as a Software Developer gives me a strong foundation in programming and problem-solving, which I continue to expand through game development.<br><br>
+
+                    Alongside programming, my secondary role is <strong>Art</strong>. I enjoy exploring the visual side of game development through 3D, environments, and other creative work. I mainly work with <strong>Unity and C#</strong>, while also using tools such as <strong>Maya and ZBrush</strong> to support the artistic side of my projects.<br><br>
+
+                    What I enjoy most about game development is bringing different disciplines together. Whether I’m programming a gameplay mechanic or creating something for the visual side of a project, I like experimenting, solving problems, and turning ideas into something players can actually experience.<br><br>
+
+                    I’m constantly learning and improving my skills, with <strong>Programming as my main focus and Art as a supporting skill</strong>. My goal is to grow as a game developer and eventually contribute to games that are both technically strong and creatively engaging.
                 </p>
             </div>
         </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+    </script>
     <script src="javascript.js"></script>
 </body>
 </html>

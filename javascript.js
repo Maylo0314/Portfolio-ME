@@ -12,4 +12,3 @@ if (currentScroll > lastScrollTop) {
 
 lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Safari
 });
-
