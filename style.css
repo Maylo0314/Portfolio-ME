@@ -283,7 +283,6 @@ header{
 /* Mobile */
 
 @media only screen and (max-width: 1215px) {
-
     .headtitle, .projectcontainer, .skillscontainer, .aboutcontainer ,.aboutcontent{
         padding-right: 15px;
         padding-left: 15px;
@@ -297,7 +296,6 @@ header{
 }
 
 @media only screen and (max-width: 768px) {
-
     .skillscontainer{
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
@@ -305,10 +303,13 @@ header{
     .projectcontainer{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    .swiper-slide{
+        width: 100% !important;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-
     .skillscontainer{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
