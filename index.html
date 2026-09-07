@@ -33,6 +33,21 @@
                 <div class="infotitle">
                     <h1 class="special">Maylo</h1>
                     <h1>Software Developer</h1>
+
+                    <div class="links">
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-artstation"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>  
@@ -64,7 +79,7 @@
                 <i class="fa-solid fa-cube"></i>
             </div>
             <div class="skillcard">
-                <p>Substance 3D Painter</p>
+                <p>Substance 3D</p>
                 <i class="fa-solid fa-paint-roller"></i>
             </div>
             <div class="skillcard">
@@ -149,21 +164,33 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                <img src="images/3D_Room_Assets (1).png" />
+                    <a href="#" class="image-popup">
+                        <img src="images/3D_Room_Assets (1).png" alt="3D Room Assets">
+                    </a>
                 </div>
                 <div class="swiper-slide">
-                <img src="images/3D_Room_Assets_Outlines_Blue (1).png" />
+                    <a href="#" class="image-popup">
+                        <img src="images/3D_Room_Assets_Outlines_Blue (1).png" />
+                    </a>
                 </div>
                 <div class="swiper-slide">
-                <img src="images/3D_Room_Assets_Materials (1).png" />
+                    <a href="#" class="image-popup">
+                        <img src="images/3D_Room_Assets_Materials (1).png" />
+                    </a>
                 </div>
                 <div class="swiper-slide">
-                <img src="images/3D_Room_Final_4K.png" />
+                    <a href="#" class="image-popup">
+                        <img src="images/3D_Room_Final_4K.png" />
+                    </a>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
         </div>
     </section>
+
+    <div id="imageModal" class="image-modal">
+        <span class="close">&times;</span>
+        <img class="modal-image" id="modalImage" src="" alt="">
+    </div>
 
     <section id="aboutme">
         <div class="headtitle">
@@ -214,6 +241,36 @@
         },
       });
     </script>
+
+    <script>
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    const close = document.querySelector(".close");
+
+    document.querySelectorAll(".image-popup").forEach(link => {
+        link.addEventListener("click", function(e) {
+            e.preventDefault();
+
+            const image = this.querySelector("img");
+
+            modalImage.src = image.src;
+            modalImage.alt = image.alt;
+
+            modal.style.display = "flex";
+        });
+    });
+
+    close.addEventListener("click", function() {
+        modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", function(e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+    </script>
+
     <script src="javascript.js"></script>
 </body>
 </html>
