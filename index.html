@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"/>
     <script src="https://kit.fontawesome.com/929f86c78c.js" crossorigin="anonymous"></script>
-    <title>Home</title>
+    <title>Portfolio-ME</title>
 </head>
 <body id="me" >
 
@@ -33,7 +34,6 @@
                 <div class="infotitle">
                     <h1 class="special">Maylo</h1>
                     <h1>Software Developer</h1>
-
                     <div class="links">
                         <a target="_blank" href="https://www.linkedin.com/in/maylo-elfrink-36a2a3376?utm_source=share_via&utm_content=profile&utm_medium=member_ios">
                             <i class="fa-brands fa-linkedin"></i>
@@ -160,17 +160,17 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <a href="#" class="image-popup">
-                        <img src="images/3D_Room_Assets (1).png" alt="3D Room Assets">
+                        <img src="images/3D_Room_Assets.png" alt="3D Room Assets">
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="#" class="image-popup">
-                        <img src="images/3D_Room_Assets_Outlines_Blue (1).png" />
+                        <img src="images/3D_Room_Assets_Outlines_Blue.png" />
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="#" class="image-popup">
-                        <img src="images/3D_Room_Assets_Materials (1).png" />
+                        <img src="images/3D_Room_Assets_Materials.png" />
                     </a>
                 </div>
                 <div class="swiper-slide">
@@ -194,6 +194,20 @@
         <div class="aboutcontainer">
             <div class="aboutimg">
                 <img src="images/maylo-elfrink.tmb-webp.webp" alt="">
+                <div class="links">
+                    <a target="_blank" href="https://www.linkedin.com/in/maylo-elfrink-36a2a3376?utm_source=share_via&utm_content=profile&utm_medium=member_ios">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a target="_blank" href="https://github.com/Maylo0314">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a target="_blank" href="#">
+                        <i class="fa-brands fa-artstation"></i>
+                    </a>
+                    <a target="_blank" href="mailto:585911@student.saxion.nl">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
             </div>
             <div class="aboutcontent">
                 <div class="title">
@@ -217,55 +231,6 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
-
-    <script>
-      var swiper = new Swiper('.mySwiper', {
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        coverflowEffect: {
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-        },
-      });
-    </script>
-
-    <script>
-    const modal = document.getElementById("imageModal");
-    const modalImage = document.getElementById("modalImage");
-    const close = document.querySelector(".close");
-
-    document.querySelectorAll(".image-popup").forEach(link => {
-        link.addEventListener("click", function(e) {
-            e.preventDefault();
-
-            const image = this.querySelector("img");
-
-            modalImage.src = image.src;
-            modalImage.alt = image.alt;
-
-            modal.style.display = "flex";
-        });
-    });
-
-    close.addEventListener("click", function() {
-        modal.style.display = "none";
-    });
-
-    modal.addEventListener("click", function(e) {
-        if (e.target === modal) {
-            modal.style.display = "none";
-        }
-    });
-    </script>
-
     <script src="javascript.js"></script>
 </body>
 </html>

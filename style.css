@@ -104,7 +104,7 @@ header{
     padding: 10px;
 }
 
-.me .special, .headtitle .special, .aboutcontainer .title .special {
+.swiper .special, .me .special, .headtitle .special, .aboutcontainer .title .special {
     font-size: 50px;
     margin: 0;
     font-family: "Playfair Display", serif;
@@ -241,18 +241,15 @@ header{
 }
 
 .aboutcontent {
-    margin-top: 50px;
-}
-
-.aboutcontent h2 {
-    font-weight: 500;
-    font-size: 20px;
-    font-style: italic;
-}
-
-.aboutcontent p {
-    font-weight: 300;
-    line-height: 27px;
+    h2 {
+        font-weight: 500;
+        font-size: 20px;
+        font-style: italic;
+    }
+    p {
+        font-weight: 300;
+        line-height: 27px;
+    }
 }
 
 .aboutimg img {
@@ -260,9 +257,11 @@ header{
 }
 
 /* Swiper css */
+
 .swiper {
     width: 100%;
     padding-bottom: 100px !important;
+    padding-top: 25px !important;
 }
 
 .swiper-slide {
@@ -270,24 +269,35 @@ header{
     background-size: cover;
     width: 600px !important;
     height: 100% !important;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 .links{
     display: flex;
-    justify-content: space-between;
     margin-top: 10px;
+    i{
+        font-size: 35px;
+        color: white;
+    }
 }
 
-.links i{
-    font-size: 35px;
-    color: white;
+.infotitle .links{
+    justify-content: space-between;
+    i{
+        font-size: 35px
+    }
+}
+
+.aboutcontainer .links {
+    justify-content: space-around;
+    i{
+        font-size: 50px;
+    }
 }
 
 /* Modal */
@@ -332,6 +342,15 @@ header{
     .aboutcontainer{
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
+
+    .headtitle .special, .aboutcontainer .title .special {
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutcontent {
+        margin-top: 25px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -346,7 +365,7 @@ header{
     .swiper-slide{
         width: 100% !important;
     }
-}
+}  
 
 @media only screen and (max-width: 600px) {
     .skillscontainer{
