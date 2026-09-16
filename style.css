@@ -147,7 +147,7 @@ header{
     font-weight: 500;
 }
 
-.skillcard:hover{
+.skillcard:hover, .links i:hover, .cv:hover{
     transform: translateY(-10px);
 }
 
@@ -216,6 +216,7 @@ header{
     object-fit: fill;   
     display: block;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
 }
 
 .projectcard .title p{
@@ -262,19 +263,36 @@ header{
     width: 100%;
     padding-bottom: 100px !important;
     padding-top: 25px !important;
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 600px !important;
+        height: 100% !important;
+        border-radius: 16px;
+        background: none;
+        a{
+            text-decoration: none;
+            color: black;
+            p{
+                width: 100%;
+            }
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 16px;
+            }
+        }
+    }
 }
 
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 600px !important;
-    height: 100% !important;
-    img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+.swiper-slide-shadow-left, .swiper-slide-shadow-right {
+    background-image: none !important;
+}
+
+.swiper-pagination-bullet-active{
+    background: black !important;
 }
 
 .links{
@@ -283,6 +301,7 @@ header{
     i{
         font-size: 35px;
         color: white;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 }
 
@@ -297,6 +316,25 @@ header{
     justify-content: space-around;
     i{
         font-size: 50px;
+    }
+}
+
+.cv{
+    width: 100%;
+    background-color: white;
+    border-radius: 16px;
+    padding: 9px 0 9px 0;
+    margin-top: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    a{
+        width: 100%;
+        color: black;
+        text-decoration: none;
+        text-align: center;      
+        p{
+            margin: 0;
+            font-weight: 500;
+        }
     }
 }
 
