@@ -260,23 +260,23 @@ header{
 /* Swiper css */
 
 .swiper {
-    width: 100%;
-    padding-bottom: 100px !important;
-    padding-top: 25px !important;
+    padding-bottom: 70px !important;
+    padding: 15px !important;
     .swiper-slide {
         background-position: center;
         background-size: cover;
-        width: 600px !important;
-        height: 100% !important;
+        width: 600px;
+        height: 100%;
         border-radius: 16px;
         background: none;
-        a{
+        padding: 15px !important;
+        a, .image-popup, .video-slide{
             text-decoration: none;
             color: black;
             p{
                 width: 100%;
             }
-            img {
+            img, video {
                 display: block;
                 width: 100%;
                 height: 100%;
@@ -286,12 +286,29 @@ header{
     }
 }
 
-.swiper-slide-shadow-left, .swiper-slide-shadow-right {
-    background-image: none !important;
+.customHR{
+    border-top: 2px solid gray;
+    width: 45%;
+    border-radius: 16px;
+    margin-top: 20px;
 }
 
-.swiper-pagination-bullet-active{
-    background: black !important;
+.swiper-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+video {
+    touch-action: manipulation;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    color: gray !important;
+    position: relative !important;
+}
+
+.swiper-slide-shadow-left, .swiper-slide-shadow-right {
+    background-image: none !important;
 }
 
 .links{
@@ -407,6 +424,14 @@ header{
 
     .swiper-slide{
         width: 100% !important;
+    }
+
+    .swiper-buttons {
+        justify-content: space-between;
+    }
+
+    .customHR{
+        width: 90%;
     }
 }  
 

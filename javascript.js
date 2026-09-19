@@ -31,7 +31,11 @@
         pagination: {
             el: '.swiper-pagination',
             clickable: true
-        }
+        },
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
     });
 
     /* Modal */
@@ -67,3 +71,19 @@
             document.body.style.overflow = "";
         }
     });
+
+    document.querySelectorAll(".video-hover").forEach(video => {    
+
+    video.addEventListener("mouseenter", () => {
+        video.controls = true;
+    });
+
+    video.addEventListener("mouseleave", () => {
+        video.controls = false;
+    });
+
+    video.addEventListener("touchstart", () => {
+        video.controls = true;
+    });
+
+});
