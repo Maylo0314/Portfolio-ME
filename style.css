@@ -288,9 +288,8 @@ header{
 
 .customHR{
     border-top: 2px solid gray;
-    width: 45%;
     border-radius: 16px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .swiper-buttons {
